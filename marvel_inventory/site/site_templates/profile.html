@@ -3,11 +3,11 @@
 {% block content %} 
 
     <header class="hero-section">
-        <h3 class="header-text">Welcome to the Marvel API!</h3>
+        <h3 class="header-text"></h3>
     </header>
 
     <!--Profile Info section-->
-    <div class="container">
+    <div class="container" id="profile">
         <h3>Here are your profile details: {{ current_user.email }}</h3>
 
         <ul class="list-group">
@@ -16,4 +16,9 @@
         </ul>
     </div>
 
+    <div class="container" >
+        <div class="col-12" align="center">
+            <img src="../../static/images/profile-wallpaper.jpg" alt="profile-wallpaper" id="profile-wallpaper">
+        </div>
+    </div>
 {% endblock content %} 
